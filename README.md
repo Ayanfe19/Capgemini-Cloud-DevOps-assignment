@@ -37,22 +37,29 @@ The Azure Kubernetes Service cluster screenshot can be seen below
 
                     The next line of action is to deploy the applications across different environments on the target infrastructure
 I created a secret for the imagepullsecret and MySQL database using the YAML file below. This was done from the terminal, this will allow authentication to the repository and the MySQL database.   
+
 ![image](https://user-images.githubusercontent.com/95041171/176220273-24bdab10-9123-43cc-9937-aba1d094df22.png)
 
                 Deploying the front-end application using the frontend docker image in ACR, I used this YAML pipeline
+                
 ![image](https://user-images.githubusercontent.com/95041171/176221267-2782b343-db06-4bdb-bf8e-aebe0346e017.png)
 
 The front-end was successfully deployed
+
 ![image](https://user-images.githubusercontent.com/95041171/176221535-2921fe37-a848-44d3-8a7d-4850b6ec6f6b.png)
 
 Front-end application is deployed to the Azure Kubernetes Cluster as seen below.
+
 ![image](https://user-images.githubusercontent.com/95041171/176221631-36684b92-8f4e-4e0a-927d-963de496b52c.png)
 
 The front-end application can be accessed using the load balancer IP address and port 8080, in the deployment YAML file, there is a service that exposed the deployment with type load balancer
+
 ![image](https://user-images.githubusercontent.com/95041171/176221931-f4384cba-52bc-4c73-8f05-197a5d5297a9.png)
 
 I created a scaling policy that makes the infrastructure scale automatically.
+
 ![image](https://user-images.githubusercontent.com/95041171/176222040-8029ca04-6ed8-4f9b-a89c-97457e6fccea.png)
+
 When the CPUs of the nodes in the Kubernetes Cluster gets to 70% threshold for 10 minutes, the node scales out by 1 automatically, also, if the CPUs of the cluster get to below the average threshold, it scales down the nodes.
 
                                                   Deploying the back-end application
@@ -63,6 +70,7 @@ See below Storage class and persistent volume claim YAML file
 ![image](https://user-images.githubusercontent.com/95041171/176222525-aef5ede6-f383-4147-b55d-4c12c411291f.png)
 
 ![image](https://user-images.githubusercontent.com/95041171/176222676-dfa4d253-613f-4af7-abe9-4edca17c86c9.png)
+
 I deployed the Storage Class and Persistent Volume Claim from the terminal
 
                                               Deploying the MySQL database, I used this YAML pipeline
