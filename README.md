@@ -1,4 +1,7 @@
 # Capgemini-Cloud-DevOps-assignment
+In this assigment I used the microsoft Azure workspace to carry out the steps that I was required to carry out.
+                                      This is the workflow diagram of the assisgment
+![image](https://user-images.githubusercontent.com/95041171/176235626-5be80ab5-306f-4e45-b46c-186afe004994.png)
 
                                                   React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry
