@@ -74,18 +74,23 @@ See below Storage class and persistent volume claim YAML file
 I deployed the Storage Class and Persistent Volume Claim from the terminal
 
                                               Deploying the MySQL database, I used this YAML pipeline
+                                              
 ![image](https://user-images.githubusercontent.com/95041171/176222995-5fc99ab9-c8a4-4485-abff-289cf848236c.png)
 
 Database created successfully
+
 ![image](https://user-images.githubusercontent.com/95041171/176223139-aafb9cce-78ab-4cab-989d-06e2030aa739.png)
 
 MySQL database deployed to Kubernetes cluster as a deployment
+
 ![image](https://user-images.githubusercontent.com/95041171/176223230-94f25390-a5de-48fd-b898-e06e3ef6e87b.png)
 
 Persistent volume claim to persist the data in MySQL database bound successfully
+
 ![image](https://user-images.githubusercontent.com/95041171/176223719-8dda8cad-e8fc-41a4-ae5a-ab9308ea03a1.png)
 
                                     Deploying the back-end application using the backend docker image in ACR, I used this YAML pipeline
+                                    
 ![image](https://user-images.githubusercontent.com/95041171/176226299-99e18016-f0f6-41a2-98e5-2603b82eee95.png)
 
 The MySQL environment variables was used to deploy the backend application as it can be seen in the YAML pipeline.
