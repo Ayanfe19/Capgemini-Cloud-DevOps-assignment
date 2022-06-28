@@ -54,7 +54,7 @@ Front-end application is deployed to the Azure Kubernetes Cluster as seen below.
 
 ![image](https://user-images.githubusercontent.com/95041171/176221631-36684b92-8f4e-4e0a-927d-963de496b52c.png)
 
-The front-end application can be accessed using the load balancer IP address and port 8080, in the deployment YAML file, there is a service that exposed the deployment with type load balancer
+The front-end application can be accessed using the load balancer IP address and port 8080, in the deployment YAML file, there is a service that exposed the deployment with type=LoadBalancer
 
 ![image](https://user-images.githubusercontent.com/95041171/176221931-f4384cba-52bc-4c73-8f05-197a5d5297a9.png)
 
