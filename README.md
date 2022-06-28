@@ -121,7 +121,7 @@ The Datadog agent was deployed as a Daemonset, the agent can be seen in the Data
 
 ![image](https://user-images.githubusercontent.com/95041171/176255227-46dc737a-de07-41c0-81ad-02aef0607380.png)
   
-The agents represent the node running in the Kubernetes cluster, once an agent is selected you will be able to see the property of the node in the cluster as yiu can see in the below screenshot.
+The agents represent the node running in the Kubernetes cluster, once an agent is selected you will be able to see the properties of the node in the cluster as you can see in the below screenshot.
   
 ![image](https://user-images.githubusercontent.com/95041171/176255727-2ff1dc04-f262-4054-aadc-9c280aef7a91.png)
   
