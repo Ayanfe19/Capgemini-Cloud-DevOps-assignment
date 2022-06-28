@@ -98,6 +98,40 @@ Persistent volume claim to persist the data in MySQL database bound successfully
 The MySQL environment variables was used to deploy the backend application as it can be seen in the YAML pipeline.
 
                                                     Monitoring the Infrastructure
+                                                    
+Datadog can help you get full visibility into your AKS deployment by collecting metrics, distributed request traces, and logs from Kubernetes, Azure, and every service running in your container infrastructure. To start monitoring AKS with Datadog, all you need to do is configure the integrations for Kubernetes and Azure. Deploy the containerized Datadog Agent as a DaemonSet within your AKS cluster using the Helm chart.
+
+# Install Datadog into Kubernetes using Helm chart
+
+API_KEY="<YOUR DATADOG API KEY>"
+
+helm repo add datadog https://helm.datadoghq.com
+
+helm install datadog `
+             --set datadog.site='datadoghq.com' `
+             --set datadog.apiKey=$API_KEY `
+             --set datadog.apm.enabled=true `
+             datadog/datadog
+  
+The nodes in the kubernetes cluster can be seen below
+  
+![image](https://user-images.githubusercontent.com/95041171/176254896-57ed618d-28ab-4338-b132-fc1f8e1866b4.png)
+  
+The Datadog agent was deployed as a Daemonset, the agent can be seen in the Datadog portal
+
+![image](https://user-images.githubusercontent.com/95041171/176255227-46dc737a-de07-41c0-81ad-02aef0607380.png)
+  
+The agents represent the node running in the Kubernetes cluster, once an agent is selected you will be able to see the property of the node in the cluster as yiu can see in the below screenshot.
+  
+![image](https://user-images.githubusercontent.com/95041171/176255727-2ff1dc04-f262-4054-aadc-9c280aef7a91.png)
+  
+![image](https://user-images.githubusercontent.com/95041171/176255980-3858c481-aaaa-4bf3-a6df-6b83a8d65c6f.png)
+
+  
+
+
+  
+  
 
                                      
 
