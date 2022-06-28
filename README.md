@@ -30,9 +30,11 @@ I understand that you would like the pipeline to deploy the applications across 
 
 The target Infrastructure would be a Managed Service known as (Azure Kubernetes Service).
 I used the below pipeline to deploy the Azure Kubernetes Service cluster
+
 ![image](https://user-images.githubusercontent.com/95041171/176219245-9cb5b43a-cec4-4bfb-9553-8d16fb79e0e6.png)
 
 The Azure Kubernetes Service cluster screenshot can be seen below
+
 ![image](https://user-images.githubusercontent.com/95041171/176219350-002e3ca2-ab8a-493a-a62e-1b0719cd5126.png)
 
                     The next line of action is to deploy the applications across different environments on the target infrastructure
