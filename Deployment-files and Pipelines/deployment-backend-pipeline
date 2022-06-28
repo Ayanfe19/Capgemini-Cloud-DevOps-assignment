@@ -19,4 +19,4 @@ steps:
   inputs:
     kubernetesServiceConnection: 'Abimbola-acr2'
     manifests: 'Deployment-manifest-files/deployment-backend.yaml'
-    imagePullSecrets: 'new-secret1'
+    imagePullSecrets: 'new-secret'
