@@ -6,6 +6,22 @@ In this assigment I used the Microsoft Azure cloud resources to carry out the op
 
 Note: The Deployments and YAML pipelines that are screenshot in this writeup are in the repository, you can check them out.
 
+                                                                Tools used:
+
+#Git and Azure Git Repos – Source Code Management and Version control system
+
+#Docker – Application Containerization system
+
+#Azure Container Registry – Managing container images
+
+#DockerHub - Sharing container images
+
+#Azure Kubernetes Service - Managed container workloads and services
+
+#Azure Pipeline - Continuous Integration (CI) and Continuous Delivery (CD)
+
+#Datadog – Metrics collection and monitoring.
+
                                                   React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry
 As requested, that the pipeline should build, test and push the docker image to a repository. The pipeline built and pushed the Docker images (Front-end and Back-end) to Azure Container Registry known as abimbolacontainerregistry as seen below.
