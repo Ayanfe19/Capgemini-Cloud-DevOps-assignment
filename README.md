@@ -1,5 +1,5 @@
 # Capgemini-Cloud-DevOps-assignment
-In this assigment I used the Microsoft Azure cloud resorces to carry out the operations that I was required to carry out.
+In this assigment I used the Microsoft Azure cloud resources to carry out the operations that I was required to carry out.
                                       This is the workflow diagram of the assisgment
 
 ![DevOps workflow](https://user-images.githubusercontent.com/95041171/176384192-d75b2a9b-f089-4944-bf04-cd60397a200b.png)
