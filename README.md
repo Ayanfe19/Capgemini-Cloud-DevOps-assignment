@@ -38,17 +38,19 @@ The Docker image for the front-end app was successfully built and pushed to the 
 
 The Docker image is in the Azure repository, the image could also be pushed to DockerHub and other container image repositories.
 The pipeline below built and pushed the back-end Docker image to the Azure Container Registry
+
 ![image](https://user-images.githubusercontent.com/95041171/176218488-f0b214fc-7a03-4ae7-afbd-9a84ab4626ed.png)
 
 The Docker image for the back-end app was successfully built and pushed to the Azure Container Registry as seen in the screenshot below
 
 ![image](https://user-images.githubusercontent.com/95041171/176218633-5e0ff1f0-4950-40c4-bf02-d7425a621075.png)
+
 The Docker images can be seen in the repository.
 
 ![image](https://user-images.githubusercontent.com/95041171/176218763-1f20d00f-548a-4a36-8598-bb8315588477.png)
 
                            Deploy the infrastructure using Infrastructure as Code (Terraform)
-I understand that you would like the pipeline to deploy the applications across different environments on the target infrastructure, however, we would first need to build the target infrastructure, in this assignment I would be using Terraform as the Infrastructure as Code (IaC) to deploy the target Infrastructure.
+I understand that you would like the deployment pipelines to deploy the applications across different environments on the target infrastructure, however, we would first need to build the target infrastructure, in this assignment I would be using Terraform as the Infrastructure as Code (IaC) to deploy the target Infrastructure.
 
 The target Infrastructure would be a Managed Service known as (Azure Kubernetes Service).
 I used the below pipeline to deploy the Azure Kubernetes Service cluster
