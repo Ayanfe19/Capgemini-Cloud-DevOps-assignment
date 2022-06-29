@@ -107,7 +107,7 @@ The MySQL environment variables was used to deploy the backend application as it
                                                     
 Datadog can help you get full visibility into your AKS deployment by collecting metrics, distributed request traces, and logs from Kubernetes, Azure, and every service running in your container infrastructure. To start monitoring AKS with Datadog, all you need to do is configure the integrations for Kubernetes and Azure. Deploy the containerized Datadog Agent as a DaemonSet within your AKS cluster using the Helm chart.
 
-# Install Datadog into Kubernetes using Helm chart
+                                                # Install Datadog into Kubernetes using Helm chart
 
 API_KEY="<YOUR DATADOG API KEY>"
 
