@@ -8,19 +8,19 @@ Note: The Deployments and YAML pipelines that are screenshot in this writeup are
 
                                                                 Tools used:
 
-#Git and Azure Git Repos – Source Code Management and Version control system
+Git and Azure Git Repos – Source Code Management and Version control system
 
-#Docker – Application Containerization system
+Docker – Application Containerization system
 
-#Azure Container Registry – Managing container images
+Azure Container Registry – Managing container images
 
-#DockerHub - Sharing container images
+DockerHub - Sharing container images
 
-#Azure Kubernetes Service - Managed container workloads and services
+Azure Kubernetes Service - Managed container workloads and services
 
-#Azure Pipeline - Continuous Integration (CI) and Continuous Delivery (CD)
+Azure Pipeline - Continuous Integration (CI) and Continuous Delivery (CD)
 
-#Datadog – Metrics collection and monitoring.
+Datadog – Metrics collection and monitoring.
 
                                                   React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry
