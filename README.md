@@ -1,8 +1,8 @@
 # Capgemini-Cloud-DevOps-assignment
-In this assigment I used the Microsoft Azure workspace to carry out the steps that I was required to carry out.
+In this assigment I used the Microsoft Azure cloud resorces to carry out the operations that I was required to carry out.
                                       This is the workflow diagram of the assisgment
 
-![image](https://user-images.githubusercontent.com/95041171/176235626-5be80ab5-306f-4e45-b46c-186afe004994.png)
+![DevOps workflow](https://user-images.githubusercontent.com/95041171/176384192-d75b2a9b-f089-4944-bf04-cd60397a200b.png)
 
                                                   React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry
@@ -11,9 +11,11 @@ The pipeline below built and pushed the front-end Docker image to the Azure Cont
 
 
 The pipeline below built and pushed the front-end Docker image to the Azure Container Registry.
+
 ![image](https://user-images.githubusercontent.com/95041171/176218164-c6f01fbb-b1aa-4e2a-a8e6-22cc5cca407a.png)
 
 The Docker image for the front-end app was successfully built and pushed to the Azure Container Registry as seen in the screenshot below
+
 ![image](https://user-images.githubusercontent.com/95041171/176218247-b0470515-6680-4bb2-a3ff-a31c2c3c396b.png)
 
 The Docker image is in the Azure repository, the image could also be pushed to DockerHub and other container image repositories.
@@ -21,8 +23,10 @@ The pipeline below built and pushed the back-end Docker image to the Azure Conta
 ![image](https://user-images.githubusercontent.com/95041171/176218488-f0b214fc-7a03-4ae7-afbd-9a84ab4626ed.png)
 
 The Docker image for the back-end app was successfully built and pushed to the Azure Container Registry as seen in the screenshot below
+
 ![image](https://user-images.githubusercontent.com/95041171/176218633-5e0ff1f0-4950-40c4-bf02-d7425a621075.png)
 The Docker images can be seen in the repository.
+
 ![image](https://user-images.githubusercontent.com/95041171/176218763-1f20d00f-548a-4a36-8598-bb8315588477.png)
 
                            Deploy the infrastructure using Infrastructure as Code (Terraform)
