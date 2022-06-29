@@ -26,7 +26,6 @@ Datadog – Metrics collection and monitoring.
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry.
 
 As requested, that the pipeline should build, test and push the docker image to a repository. The pipeline built and pushed the Docker images (Front-end and Back-end) to Azure Container Registry known as abimbolacontainerregistry as seen below.
-The pipeline below built and pushed the front-end Docker image to the Azure Container Registry.
 
 
 The pipeline below built and pushed the front-end Docker image to the Azure Container Registry.
