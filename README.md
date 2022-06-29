@@ -152,6 +152,11 @@ The agents represent the node running in the Kubernetes cluster, once an agent i
                                              Create a dashboard and start monitoring the cluster
   
 ![image](https://user-images.githubusercontent.com/95041171/176255980-3858c481-aaaa-4bf3-a6df-6b83a8d65c6f.png)
+  
+                                                 Terraform Pipeline to clean up the infastructure
+  
+![image](https://user-images.githubusercontent.com/95041171/176500723-e9bc60b1-04bc-4c23-ad1c-af72613cf601.png)
+
 
   
 
