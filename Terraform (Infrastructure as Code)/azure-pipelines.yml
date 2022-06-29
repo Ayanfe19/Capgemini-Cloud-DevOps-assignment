@@ -14,7 +14,7 @@ steps:
   inputs:
     terraformVersion: 'latest'
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV3@3
+- task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'init'
@@ -22,16 +22,18 @@ steps:
     backendAzureRmResourceGroupName: 'terraform'
     backendAzureRmStorageAccountName: 'ter1'
     backendAzureRmContainerName: 'abimbola'
-    backendAzureRmKey: 'tfstatefile'
+    backendAzureRmKey: 'dev.vnet.terraform.tfstate'
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV3@3
+- task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'plan'
+    commandOptions: '-out vnet.tfplan'
     environmentServiceNameAzureRM: 'service-principle-for-terraform1'
 
-- task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV3@3
+- task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'apply'
+    commandOptions: '-auto-approve vnet.tfplan'
     environmentServiceNameAzureRM: 'service-principle-for-terraform1'
