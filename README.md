@@ -4,6 +4,8 @@ In this assigment I used the Microsoft Azure cloud resources to carry out the op
 
 ![DevOps workflow](https://user-images.githubusercontent.com/95041171/176384192-d75b2a9b-f089-4944-bf04-cd60397a200b.png)
 
+Note: The Deployments and YAML pipelines that are screenshot in this writeup are in the repository, you can check them out.
+
                                                   React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry
 As requested, that the pipeline should build, test and push the docker image to a repository. The pipeline built and pushed the Docker images (Front-end and Back-end) to Azure Container Registry known as abimbolacontainerregistry as seen below.
