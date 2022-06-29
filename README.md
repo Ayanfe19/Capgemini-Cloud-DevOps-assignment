@@ -6,7 +6,7 @@ In this assigment I used the Microsoft Azure cloud resources to carry out the op
 
 Note: The Deployments and YAML pipelines that are screenshot in this writeup are in the repository, you can check them out.
 
-                                                            Tools used:
+                                                        Tools used:
 
 Git and Azure Git Repos – Source Code Management and Version control system
 
@@ -22,7 +22,7 @@ Azure Pipeline - Continuous Integration (CI) and Continuous Delivery (CD)
 
 Datadog – Metrics collection and monitoring.
 
-                                                  React-and-Spring-data-rest
+                                               React-and-Spring-data-rest
 Deploy a pipeline to build, test and push the docker image to Azure Container Registry.
 
 As requested, that the pipeline should build, test and push the docker image to a repository. The pipeline built and pushed the Docker images (Front-end and Back-end) to Azure Container Registry known as abimbolacontainerregistry as seen below.
@@ -99,7 +99,7 @@ See below Storage class and persistent volume claim YAML file
 
 I deployed the Storage Class and Persistent Volume Claim from the terminal
 
-                                              Deploying the MySQL database, I used this YAML pipeline
+                                            Deploying the MySQL database, I used this YAML pipeline
                                               
 ![image](https://user-images.githubusercontent.com/95041171/176222995-5fc99ab9-c8a4-4485-abff-289cf848236c.png)
 
@@ -121,7 +121,7 @@ Persistent volume claim to persist the data in MySQL database bound successfully
 
 The MySQL environment variables was used to deploy the backend application as it can be seen in the YAML pipeline.
 
-                                                    Monitoring the Infrastructure
+                                                 Monitoring the Infrastructure
                                                     
 Datadog can help you get full visibility into your AKS deployment by collecting metrics, distributed request traces, and logs from Kubernetes, Azure, and every service running in your container infrastructure. To start monitoring AKS with Datadog, all you need to do is configure the integrations for Kubernetes and Azure. Deploy the containerized Datadog Agent as a DaemonSet within your AKS cluster using the Helm chart.
 
@@ -158,6 +158,9 @@ The agents represent the node running in the Kubernetes cluster, once an agent i
 ![image](https://user-images.githubusercontent.com/95041171/176500723-e9bc60b1-04bc-4c23-ad1c-af72613cf601.png)
   
 This is a Public repository, to fork kindly select FORK and you have it.
+
+![image](https://user-images.githubusercontent.com/95041171/176508760-c4294b6a-b6f4-4f0f-9425-d0fc67f684f3.png)
+
   
 Thank You
 
