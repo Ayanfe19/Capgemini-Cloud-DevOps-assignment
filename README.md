@@ -1,4 +1,4 @@
-                                                         Capgemini-Cloud-DevOps-assignment
+                                          Capgemini-Cloud-DevOps-assignment
 In this assigment I used the Microsoft Azure cloud resources to carry out the operations that I was required to carry out.
                                       This is the workflow diagram of the assisgment
 
@@ -6,7 +6,7 @@ In this assigment I used the Microsoft Azure cloud resources to carry out the op
 
 Note: The Deployments and YAML pipelines that are screenshot in this writeup are in the repository, you can check them out.
 
-                                                                Tools used:
+                                                            Tools used:
 
 Git and Azure Git Repos – Source Code Management and Version control system
 
