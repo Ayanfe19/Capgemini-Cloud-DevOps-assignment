@@ -119,13 +119,13 @@ Persistent volume claim to persist the data in MySQL database bound successfully
                                     
 ![image](https://user-images.githubusercontent.com/95041171/176226299-99e18016-f0f6-41a2-98e5-2603b82eee95.png)
 
-The MySQL environment variables was used to deploy the backend application as it can be seen in the YAML pipeline.
+The MySQL environment variables was used to deploy the backend application as it can be seen in the deployment file.
 
                                                  Monitoring the Infrastructure
                                                     
 Datadog can help you get full visibility into your AKS deployment by collecting metrics, distributed request traces, and logs from Kubernetes, Azure, and every service running in your container infrastructure. To start monitoring AKS with Datadog, all you need to do is configure the integrations for Kubernetes and Azure. Deploy the containerized Datadog Agent as a DaemonSet within your AKS cluster using the Helm chart.
 
-                                                         Install Datadog into Kubernetes using Helm chart
+                                                        Install Datadog into Kubernetes using Helm chart
 
 API_KEY="<YOUR DATADOG API KEY>"
 
