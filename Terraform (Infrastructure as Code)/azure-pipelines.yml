@@ -18,7 +18,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendServiceArm: 'service-principle-for-terraform1'
+    backendServiceArm: 'aksApp'
     backendAzureRmResourceGroupName: 'terraform'
     backendAzureRmStorageAccountName: 'ter1'
     backendAzureRmContainerName: 'abimbola'
