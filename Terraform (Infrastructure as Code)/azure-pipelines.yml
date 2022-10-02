@@ -29,7 +29,7 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     commandOptions: '-out vnet.tfplan'
-    environmentServiceNameAzureRM: 'service-principle-for-terraform1'
+    environmentServiceNameAzureRM: 'aksApp'
 
 - task: TerraformTaskV3@3
   inputs:
