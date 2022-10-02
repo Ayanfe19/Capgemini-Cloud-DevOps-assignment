@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+- task: TerraformCLI@0
+  inputs:
+    command: 'init'
+    backendType: 'azurerm'
+    backendServiceArm: 'new-test-sp'
+    backendAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
+    backendAzureRmResourceGroupName: 'ayanfe'
+    backendAzureRmStorageAccountName: 'cs4100320006997e147'
+    backendAzureRmContainerName: 'terco'
+    allowTelemetryCollection: true
+- task: TerraformCLI@0
+  inputs:
+    command: 'plan'
+    environmentServiceName: 'new-test-sp'
+    providerAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
+    allowTelemetryCollection: false
