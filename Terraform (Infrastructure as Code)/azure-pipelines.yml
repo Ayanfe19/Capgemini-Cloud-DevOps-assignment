@@ -18,10 +18,10 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendServiceArm: 'aksApp'
-    backendAzureRmResourceGroupName: 'terraform'
+    backendServiceArm: 'new-test-sp'
+    backendAzureRmResourceGroupName: 'ayanfe'
     backendAzureRmStorageAccountName: 'ter1'
-    backendAzureRmContainerName: 'abimbola'
+    backendAzureRmContainerName: 'terCo'
     backendAzureRmKey: 'dev.vnet.terraform.tfstate'
 
 - task: TerraformTaskV3@3
@@ -29,11 +29,11 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     commandOptions: '-out vnet.tfplan'
-    environmentServiceNameAzureRM: 'aksApp'
+    environmentServiceNameAzureRM: 'new-test-sp'
 
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'apply'
     commandOptions: '-auto-approve vnet.tfplan'
-    environmentServiceNameAzureRM: 'service-principle-for-terraform1'
+    environmentServiceNameAzureRM: 'new-test-sp'
