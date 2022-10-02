@@ -20,8 +20,8 @@ steps:
     command: 'init'
     backendServiceArm: 'new-test-sp'
     backendAzureRmResourceGroupName: 'ayanfe'
-    backendAzureRmStorageAccountName: 'ter1'
-    backendAzureRmContainerName: 'terCo'
+    backendAzureRmStorageAccountName: 'cs4100320006997e147'
+    backendAzureRmContainerName: 'terco'
     backendAzureRmKey: 'dev.vnet.terraform.tfstate'
 
 - task: TerraformTaskV3@3
