@@ -1,4 +1,4 @@
-resource_group_name = "ayanfe"
+resource_group_name = "ayanfe1"
 location            = "West Europe"
 cluster_name        = "terraform-aks-cluster"
 kubernetes_version  = "1.22.6"
