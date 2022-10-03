@@ -14,5 +14,6 @@ steps:
   displayName: 'Run a one-line script'
 - task: TerraformCLI@0
   inputs:
-    command: 'init'
+    command: 'validate'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
     allowTelemetryCollection: false
