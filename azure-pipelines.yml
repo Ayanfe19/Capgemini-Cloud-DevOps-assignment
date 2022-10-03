@@ -13,9 +13,30 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - task: TerraformCLI@0
+  displayName: Terraform Init
   inputs:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
     backendType: 'azurerm'
     backendServiceArm: 'new-test-sp'
+    backendAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
+    backendAzureRmResourceGroupName: 'ayanfe'
+    backendAzureRmStorageAccountName: 'cs4100320006997e147'
+    backendAzureRmContainerName: 'terco'
+    allowTelemetryCollection: false
+
+- task: TerraformCLI@0
+  displayName: Terraform Plan
+  inputs:
+    command: 'plan'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
+    environmentServiceName: 'new-test-sp'
+    allowTelemetryCollection: false
+
+- task: TerraformCLI@0
+  displayName: Terraform Apply
+  inputs:
+    command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
+    commandOptions: '-auto-approve'
     allowTelemetryCollection: false
