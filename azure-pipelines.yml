@@ -32,12 +32,18 @@ steps:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
     environmentServiceName: 'new-test-sp'
+    providerAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
+    commandOptions: '-out'
     allowTelemetryCollection: false
+    publishPlanResults: 'aks.tfplan'
 
 - task: TerraformCLI@0
+  displayName: Terraform Apply
   inputs:
     command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
     environmentServiceName: 'new-test-sp'
     providerAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
     runAzLogin: true
+    commandOptions: '-auto-approve'
     allowTelemetryCollection: false
