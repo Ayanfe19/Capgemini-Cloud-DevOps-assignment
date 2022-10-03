@@ -21,7 +21,7 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'new-test-sp'
     backendAzureRmSubscriptionId: '68bd44f5-fac6-4430-a0d0-93a3632c3af9'
-    backendAzureRmResourceGroupName: 'ayanfe'
+    backendAzureRmResourceGroupName: 'cloud-shell-storage-westus'
     backendAzureRmStorageAccountName: 'cs4100320006997e147'
     backendAzureRmContainerName: 'terco'
     allowTelemetryCollection: false
