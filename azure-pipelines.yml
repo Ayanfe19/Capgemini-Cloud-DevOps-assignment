@@ -14,6 +14,8 @@ steps:
   displayName: 'Run a one-line script'
 - task: TerraformCLI@0
   inputs:
-    command: 'validate'
+    command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform (Infrastructure as Code)'
+    backendType: 'azurerm'
+    backendServiceArm: 'new-test-sp'
     allowTelemetryCollection: false
